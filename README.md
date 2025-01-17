@@ -97,6 +97,8 @@ Nota: Este tutorial utiliza permissões de acesso total (Full Access) para simpl
     4. Clique em Create Bucket.
 
  **🌐8.Configurar o Security Group**
+
+ 
     1. No Console AWS, vá para EC2 > Security Groups.
     
     2. Crie ou edite um Security Group com as seguintes regras de entrada:
