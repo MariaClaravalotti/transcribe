@@ -52,11 +52,11 @@ O projeto usa comandos de voz para realizar operações em instâncias EC2, como
    pip install boto3 pyaudio SpeechRecognition
 
 ###▶️ Execução do Projeto
-**1. Gravar Comandos de Voz: python voice_command.py
-**2. Processamento na AWS:
+1. Gravar Comandos de Voz: python voice_command.py
+2. Processamento na AWS:
    O áudio é enviado ao Amazon Transcribe para conversão em texto.
    A função Lambda analisa o texto e executa o comando EC2 correspondente.
-**3. Logs e Monitoramento
+3. Logs e Monitoramento
 Confira logs de execução no CloudWatch para verificar o status de cada operação.
 
 ###🔧 Personalização
