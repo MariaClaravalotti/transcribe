@@ -96,3 +96,4 @@ Este projeto está licenciado sob a MIT License.
 Contribuição
 
 Contribuições são bem-vindas! Siga as etapas no arquivo CONTRIBUTING.md para mais informações.
+
