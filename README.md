@@ -58,6 +58,7 @@ O projeto usa comandos de voz para realizar operações em instâncias EC2, como
    A função Lambda analisa o texto e executa o comando EC2 correspondente.
 3. Logs e Monitoramento
 Confira logs de execução no CloudWatch para verificar o status de cada operação.
+[Tutorial_de_Configuração_e_Execução_do_Projeto[1].docx](https://github.com/user-attachments/files/18456147/Tutorial_de_Configuracao_e_Execucao_do_Projeto.1.docx)
 
 ### **🔧 Personalização**
 Adicionando comandos: Atualize a função Lambda para incluir novos comandos de voz.
