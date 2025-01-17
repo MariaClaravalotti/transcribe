@@ -105,7 +105,9 @@ Nota: Este tutorial utiliza permissões de acesso total (Full Access) para simpl
         
         ◦ 🟢Porta 80 (HTTP) - Para acesso web (opcional).
         
-    3. Salve e copie o ID do Security Group (ex.: sg-0abc123def4567890), pois ele será usado no código da Lambda.  
+    3. Salve e copie o ID do Security Group (ex.: sg-0abc123def4567890), 
+    
+    pois ele será usado no código da Lambda.  
 
 **🖥️9.Configurar a Função AWS Lambda**
 
