@@ -3,8 +3,14 @@
 Este projeto permite gerenciar instâncias EC2 na AWS utilizando comandos de voz. Ele combina serviços da AWS, como Lambda, Transcribe e EC2, com tecnologias Python para processamento de áudio e comandos.
 
 ---
+Colaboradores
+João Nolasco
+Danniel de Albuquerque
+Maria Clara Valotti
 
+---
 ## 🚀 **Visão Geral**
+
 
 O projeto usa comandos de voz para realizar operações em instâncias EC2, como iniciar, parar e listar instâncias. O fluxo do projeto inclui:
 
@@ -126,8 +132,7 @@ Nota: Este tutorial utiliza permissões de acesso total (Full Access) para simpl
        
     4. Substitua o código padrão pela função Lambda abaixo:    
     
-      https://github.com/nolascojoao/automated-ec2-voice- 
-      launcher/blob/main/lambda_function.py 
+      voice_command.py 
       
     5.Clique em Deploy para salvar a função.  
 
@@ -153,7 +158,7 @@ Nota: Este tutorial utiliza permissões de acesso total (Full Access) para simpl
 
 Crie o script Python para capturar o áudio e interagir com o serviço S3 e Transcribe. Aqui está o código:
 
-https://github.com/nolascojoao/automated-ec2-voice-launcher/blob/main/voice_command.py
+lambda_function.py
 
 ---
  
