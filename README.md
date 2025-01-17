@@ -107,7 +107,7 @@ Nota: Este tutorial utiliza permissões de acesso total (Full Access) para simpl
 **11.Executar o Script Localmente**
 Crie o script Python para capturar o áudio e interagir com o serviço S3 e Transcribe. Aqui está o código:https://github.com/nolascojoao/automated-ec2-voice-launcher/blob/main/voice_command.py
  
-##**▶️ Execução do Projeto**
+###**▶️ Execução do Projeto**
 1. Gravar Comandos de Voz: python voice_command.py
 2. Processamento na AWS:
    O áudio é enviado ao Amazon Transcribe para conversão em texto.
@@ -115,7 +115,7 @@ Crie o script Python para capturar o áudio e interagir com o serviço S3 e Tran
 3. Logs e Monitoramento
 Confira logs de execução no CloudWatch para verificar o status de cada operação.
 
-##**🔧 Personalização**
+###**🔧 Personalização**
 Adicionando comandos: Atualize a função Lambda para incluir novos comandos de voz.
 Idiomas: Configure o Amazon Transcribe para suportar outros idiomas.
 
