@@ -1,8 +1,3 @@
-CRIAR README  Tutorial de Configuração e Execução do Projeto "Gerenciamento de EC2 Controlado por Voz"
-antes disso vc faz os passos abaixo: 
-
-1 - cria uma pasta em qualquer lugar pra colocar o script
-2 - abra o git bash nessa pasta e faça os passos abaixo:
 
 ## Passo 1: Criar o ambiente virtual
 
