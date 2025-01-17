@@ -150,6 +150,8 @@ Nota: Este tutorial utiliza permissões de acesso total (Full Access) para simpl
 Crie o script Python para capturar o áudio e interagir com o serviço S3 e Transcribe. Aqui está o código:
 
 https://github.com/nolascojoao/automated-ec2-voice-launcher/blob/main/voice_command.py
+
+---
  
 ### **▶️ Execução do Projeto**
 1. Gravar Comandos de Voz: python voice_command.py
