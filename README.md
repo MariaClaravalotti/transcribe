@@ -43,6 +43,7 @@ O projeto usa comandos de voz para realizar operações em instâncias EC2, como
 
 **⚙️ Configuração do Ambiente Virtual**
 
+
 **🛠️1.Crie um diretório para o projeto e navegue até ele:**
    "bash"
    mkdir gerenciamento-ec2 && cd gerenciamento-ec2
@@ -50,18 +51,26 @@ O projeto usa comandos de voz para realizar operações em instâncias EC2, como
    No terminal, execute: -python3.13 -m venv venv (Para preparar o ambiente e 
    baixar as dependecias apenas na pasta)
                          -source venv/bin/activate
+
+
+                         
 **📦2. Instalar as Dependências**
    pip install boto3 pyaudio SpeechRecognition
+
+   
    
 
 **🔒3.Security Group configurado para as instâncias EC2.**
 Assegure-se de ter um Security Group configurado para as instâncias EC2, permitindo comunicação e controle adequados.
 
 
+
 **🛠️4.Criar uma IAM Role**
     1. No Console AWS, acesse IAM > Roles > Create Role.
     2. Escolha o tipo de entidade confiável como AWS Service e selecione 
     Lambda.
+
+    
 
 **📝5.Anexe as seguintes permissões gerenciadas:**
 
@@ -119,6 +128,7 @@ Nota: Este tutorial utiliza permissões de acesso total (Full Access) para simpl
     5.Clique em Deploy para salvar a função.  
 
 **⚡10.Configurar o Evento do S3 para Disparar a Lambda** 
+
     1.No Console AWS, acesse o bucket S3 criado anteriormente.
     
     2. Vá para Properties > Event Notifications > Create Event Notification.
