@@ -42,21 +42,21 @@ O projeto usa comandos de voz para realizar operações em instâncias EC2, como
 - Microfone para entrada de voz.
 
 ### **2. Criar Ambiente Virtual**
-#1. Crie um diretório para o projeto e navegue até ele:
+**1. Crie um diretório para o projeto e navegue até ele:
    ```bash
    mkdir gerenciamento-ec2 && cd gerenciamento-ec2
 
    No terminal, execute: python3.13 -m venv venv (Para preparar o ambiente e baixar as dependecias apenas na pasta)
                          source venv/bin/activate
-#2. Instale as dependências:
+**2. Instale as dependências:
    pip install boto3 pyaudio SpeechRecognition
 
 ###▶️ Execução do Projeto
-1. Gravar Comandos de Voz: python voice_command.py
-2. Processamento na AWS:
+**1. Gravar Comandos de Voz: python voice_command.py
+**2. Processamento na AWS:
    O áudio é enviado ao Amazon Transcribe para conversão em texto.
    A função Lambda analisa o texto e executa o comando EC2 correspondente.
-3. Logs e Monitoramento
+**3. Logs e Monitoramento
 Confira logs de execução no CloudWatch para verificar o status de cada operação.
 
 ###🔧 Personalização
