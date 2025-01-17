@@ -42,16 +42,16 @@ O projeto usa comandos de voz para realizar operações em instâncias EC2, como
 - Microfone para entrada de voz.
 
 ### **2. Criar Ambiente Virtual**
-1. Crie um diretório para o projeto e navegue até ele:
+##**1. Crie um diretório para o projeto e navegue até ele:##**
    ```bash
    mkdir gerenciamento-ec2 && cd gerenciamento-ec2
 
    No terminal, execute: python3.13 -m venv venv (Para preparar o ambiente e baixar as dependecias apenas na pasta)
                          source venv/bin/activate
-2. Instale as dependências:
+##**2.Instale as dependências:**
    pip install boto3 pyaudio SpeechRecognition
 
-3.Um Security Group configurado para as instâncias EC2. 
+##**3.Um Security Group configurado para as instâncias EC2.** 
 
 ##4.Criar uma IAM Role
     1. No Console AWS, acesse IAM > Roles > Create Role.
