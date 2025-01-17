@@ -42,46 +42,46 @@ O projeto usa comandos de voz para realizar operações em instâncias EC2, como
 - Microfone para entrada de voz.
 
 ### **2. Criar Ambiente Virtual**
-##**1. Crie um diretório para o projeto e navegue até ele:##**
+**1. Crie um diretório para o projeto e navegue até ele:**
    ```bash
    mkdir gerenciamento-ec2 && cd gerenciamento-ec2
 
    No terminal, execute: python3.13 -m venv venv (Para preparar o ambiente e baixar as dependecias apenas na pasta)
                          source venv/bin/activate
-##**2.Instale as dependências:**
+2.Instale as dependências:
    pip install boto3 pyaudio SpeechRecognition
 
-##**3.Um Security Group configurado para as instâncias EC2.** 
+3.Um Security Group configurado para as instâncias EC2.
 
-##4.Criar uma IAM Role
+4.Criar uma IAM Role
     1. No Console AWS, acesse IAM > Roles > Create Role.
     2. Escolha o tipo de entidade confiável como AWS Service e selecione 
     Lambda.
 
-##5.Anexe as seguintes permissões gerenciadas:
+5.Anexe as seguintes permissões gerenciadas:
         ◦ AmazonEC2FullAccess
         ◦ AmazonS3FullAccess
         ◦ CloudWatchLogsFullAccess
         ◦ AmazonTranscribeFullAccess   
 
-##6.Dê um nome para a role, como VoiceEC2ManagerRole, e conclua.
+6.Dê um nome para a role, como VoiceEC2ManagerRole, e conclua.
  
 Nota: Este tutorial utiliza permissões de acesso total (Full Access) para simplificação. Em projetos reais, sempre aplique a política de menor privilégio.
 
-##7.Criar um Bucket S3
+7.Criar um Bucket S3
     1. Acesse S3 > Create Bucket.
     2. Dê um nome único para o bucket (ex.: voice-ec2-manager).
     3. Escolha a região (ex.: us-east-1) e mantenha as configurações padrão.
     4. Clique em Create Bucket.
 
- ##8. Configurar o Security Group
+ 8. Configurar o Security Group
     1. No Console AWS, vá para EC2 > Security Groups.
     2. Crie ou edite um Security Group com as seguintes regras de entrada:
         ◦ Porta 22 (SSH) - Para conexões remotas (caso necessário).
         ◦ Porta 80 (HTTP) - Para acesso web (opcional).
     3. Salve e copie o ID do Security Group (ex.: sg-0abc123def4567890), pois ele será usado no código da Lambda.  
 
-##9.Configurar a Função AWS Lambda
+9.Configurar a Função AWS Lambda
     1. No Console AWS, acesse Lambda > Create Function.
     2. Escolha Author from scratch e preencha:
         ◦ Nome: VoiceEC2Manager
@@ -93,7 +93,7 @@ Nota: Este tutorial utiliza permissões de acesso total (Full Access) para simpl
       launcher/blob/main/lambda_function.py 
     5.Clique em Deploy para salvar a função.  
 
-##10.Configurar o Evento do S3 para Disparar a Lambda 
+10.Configurar o Evento do S3 para Disparar a Lambda 
     1.No Console AWS, acesse o bucket S3 criado anteriormente.
     2. Vá para Properties > Event Notifications > Create Event Notification.
     3. Configure:
@@ -103,7 +103,7 @@ Nota: Este tutorial utiliza permissões de acesso total (Full Access) para simpl
         ◦ Destination: Escolha a função Lambda criada (VoiceEC2Manager).
     4.Salve a configuração.
     
-##11.Executar o Script Localmente
+11.Executar o Script Localmente
 Crie o script Python para capturar o áudio e interagir com o serviço S3 e Transcribe. Aqui está o código:https://github.com/nolascojoao/automated-ec2-voice-launcher/blob/main/voice_command.py
  
 ### **▶️ Execução do Projeto**
