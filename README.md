@@ -3,10 +3,10 @@
 Este projeto permite gerenciar instâncias EC2 na AWS utilizando comandos de voz. Ele combina serviços da AWS, como Lambda, Transcribe e EC2, com tecnologias Python para processamento de áudio e comandos.
 
 ---
-## Colaboradores:
-◦https://github.com/nolascojoao
-◦https://github.com/Danniel30
-◦https://github.com/MariaClaravalotti
+### Colaboradores
+- [João Nolasco](https://github.com/nolascojoao)
+- [Danniel de Albuquerque](https://github.com/Danniel30)
+- [Maria Clara Valotti](https://github.com/MariaClaravalotti)
 
 ---
 ## 🚀 **Visão Geral**
